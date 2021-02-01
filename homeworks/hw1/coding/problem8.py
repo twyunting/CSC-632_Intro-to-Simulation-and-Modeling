@@ -10,6 +10,10 @@ n = 50
 # create a function
 def zeroToFifty(a, b, n):
 	zeroToFifty = np.random.uniform(a, b, n)
+	# Draw a diagram with 50 random numbers
+	plt.plot(X1)
+	plt.show()
+	plt.figure()
 	# stepfilled' generates a lineplot that is by default filled
 	# density = True: draw and return a probability density:
 	plt.hist(zeroToFifty, density = True, histtype = 'stepfilled', alpha = 0.5)
