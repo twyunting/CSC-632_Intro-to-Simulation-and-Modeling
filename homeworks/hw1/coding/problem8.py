@@ -17,5 +17,5 @@ def zeroToFifty(a, b, n):
 	plt.show()
 
 # Using for loop to repeat the same graph by replicating 500 samples 
-for i in range(5):
+for i in range(500):
 	zeroToFifty(a, b, n)
