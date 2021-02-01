@@ -5,14 +5,19 @@ import random
 
 
 a = 0
-b = 51 # need to include 50 so we add up 1
-N = 500
-zeroToFifty = np.random.uniform(a, b, 500) 
-plt.plot(zeroToFifty)
-plt.show()
-plt.figure()
-plt.hist(zeroToFifty, density = True, histtype = 'stepfilled', alpha = 0.2)
-plt.show()
+b = 50 # needs to include 50 so we add up 1
+n = 50
+
+def zeroToFifty(a, b, n):
+	zeroToFifty = np.random.uniform(a, b, n)
+	plt.hist(zeroToFifty, density = True, histtype = 'stepfilled', alpha = 0.2)
+	plt.show()
+
+for i in range(5):
+	zeroToFifty(a, b, n)
+
+
+
 # print(zeroToFifty)
 
 """
