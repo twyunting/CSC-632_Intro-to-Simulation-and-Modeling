@@ -1,9 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-N = 1000
-n = 10
-p = 0.5
+N = 500
+n = 25
+p = 0.1
 
 P1 = np.random.binomial(n,p,N)
 
