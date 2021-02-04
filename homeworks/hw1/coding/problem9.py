@@ -14,12 +14,12 @@ plt.show()
 
 # Find probability of having 5 successes (that is p (X = 5))
 
-count = 0
-for i in range(len(P1)):
-	if P1[i] == 5:
-		count += 1
+res = []
+for i, j in enumerate(P1):
+	if j == 5:
+	 res.append(i+1) # add the Xth = 5 in the new array
 
 
-print(count/500)
+print(res)
 
 
