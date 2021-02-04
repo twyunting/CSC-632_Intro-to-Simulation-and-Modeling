@@ -2,14 +2,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# add 1000
 def probabilityDistribution(mu, sigma):
-	Y = np.random.normal(mu, sigma)
+	Y = np.random.normal(mu, sigma, 1000)
 	PlotY = sns.distplot(Y)
-	plt.figure()
 	plt.show()
-	plt.hist(zeroToFifty, density = True, histtype = 'stepfilled', alpha = 0.5)
+	#plt.figure()
+	#plt.hist(zeroToFifty, density = True, histtype = 'stepfilled', alpha = 0.5)
 	# Display all open figures
-	plt.show()
+	
 
 
 
