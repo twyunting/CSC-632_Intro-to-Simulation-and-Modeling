@@ -7,13 +7,28 @@ def probabilityDistribution(mu, sigma):
 	Y = np.random.normal(mu, sigma, 1000)
 	PlotY = sns.distplot(Y)
 	plt.show()
-	#plt.figure()
-	#plt.hist(zeroToFifty, density = True, histtype = 'stepfilled', alpha = 0.5)
-	# Display all open figures
+	plt.figure()
+	plt.hist(Y, density = True, histtype = 'stepfilled', alpha = 0.5, color = "green", ec = 'black')
+	plt.show()
 	
+	# FindP (Y>20)
+	greaterThanTwenty = []
+	for i, j in enumerate(Y):
+		if j > 20:
+	 		greaterThanTwenty.append(i+1) # add the Yth > 20 in the new array
 
+	print(greaterThanTwenty)
+
+	# Find P (Y = 22.5)
+	equalTewntyFivePointFive = []
+	for k, l in enumerate(Y):
+		if l == 22.5:
+	 		equalTewntyFivePointFive.append(k+1) # add the Yth > 20 in the new array
+	print(equalTewntyFivePointFive)
 
 
 probabilityDistribution(25, 3)
 probabilityDistribution(25, 4)
 probabilityDistribution(25, 5)
+
+# 
