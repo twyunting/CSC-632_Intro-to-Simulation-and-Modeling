@@ -18,6 +18,6 @@ for i, j in enumerate(P1):
 	if j == 5:
 	 res.append(i+1) # add the Xth = 5 in the new array
 
-print(res)
+print(len(res)/500)
 
 

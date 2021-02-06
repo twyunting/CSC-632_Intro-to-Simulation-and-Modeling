@@ -17,18 +17,18 @@ def probabilityDistribution(mu, sigma):
 		if j > 20:
 	 		greaterThanTwenty.append(i+1) # add the Yth > 20 in the new array
 
-	print(greaterThanTwenty)
+	print(len(greaterThanTwenty)/1000)
 
 	# Find P (Y = 22.5)
 	equalTewntyFivePointFive = []
 	for k, l in enumerate(Y):
 		if l == 22.5:
-	 		equalTewntyFivePointFive.append(k+1) # add the Yth > 20 in the new array
-	print(equalTewntyFivePointFive)
+	 		equalTewntyFivePointFive.append(k+1) # add the Yth == 22.5 in the new array
+	print(len(equalTewntyFivePointFive)/1000)
 
 
 probabilityDistribution(25, 3)
 probabilityDistribution(25, 4)
 probabilityDistribution(25, 5)
 
-# 
+
