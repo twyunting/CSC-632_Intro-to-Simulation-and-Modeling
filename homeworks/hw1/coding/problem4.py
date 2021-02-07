@@ -10,6 +10,7 @@ for i in range(100): # run 100 times
 
 
 # 4b Learmonth-Lewis generator
+
 a = 60
 c = 0
 m = 2**(31) -1
@@ -25,8 +26,14 @@ for i in range(100):
 
 
 # 4c Lagged Fibonacci generator
+x0 = x1 = 1
+m = 2**32
 
 
-
+for i in range(100):
+	x = np.mod((x0+x1), m)
+	x0 = x1
+	x1 = x
+	print(x)
 
 
