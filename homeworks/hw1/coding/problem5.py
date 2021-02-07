@@ -27,10 +27,20 @@ randomNumberGenerator(10)
 """
 
 # d) Use a random generator to select three “same” sets of random countries from the following list.
-countriesList = [Canada, USA, Italy, China, India, South Africa, Spain, Brazil, Mexico]
-for i in range(10):
-    countriesItem = random.choice(countriesList)
-    print ("Randomly selected item from Cities list is - ", countriesItem)
+countriesList = ["Canada", "USA", "Italy", "China", "India", "South Africa", "Spain", "Brazil", "Mexico"]
+d = {}
+
+def fff(n):
+	for i in range(n):
+		countriesItem = random.choice(countriesList)
+		for item, value in d:
+			if not d:
+				d[item] = countriesItem
+		if d == 3:
+			return d
+fff(100)
+
+	#print ("Randomly selected item from Cities list is - ", countriesItem)
 
 
 
