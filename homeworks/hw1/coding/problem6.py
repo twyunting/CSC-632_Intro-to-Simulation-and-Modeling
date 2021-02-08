@@ -8,7 +8,7 @@ res=[]
 for i in grades:
 	tmp = np.array([i])
 	res.append(tmp)
-print(res)
+#print(res)
 # testing for 40 arrays	
 #for i in res:
 	#print(i)
@@ -34,7 +34,7 @@ counts = np.empty(S.shape, dtype = int)
 V = 0
 
 for i in range(20):
-	counts[i] = len(np.where((res >= S[i]) & (res < S[i]+0.05))[0])
+	counts[i] = len(np.where((grades >= S[i]) & (grades < S[i]+0.05))[0])
 	V = V + (counts[i] - Ns)**2 / Ns
 
 print("R = ",counts)

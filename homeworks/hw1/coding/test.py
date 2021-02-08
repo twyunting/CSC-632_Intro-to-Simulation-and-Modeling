@@ -16,4 +16,4 @@ for i in range(0,100):
 
     u= np.append(u,x/m)
 
-    print(len(u))
+    print(type(u))
