@@ -11,7 +11,7 @@ n = 50
 def zeroToFifty(a, b, n):
 	zeroToFifty = np.random.uniform(a, b, n)
 	# Draw a diagram with 50 random numbers
-	plt.plot(X1)
+	plt.plot(zeroToFifty)
 	plt.show()
 	plt.figure()
 	# stepfilled' generates a lineplot that is by default filled
