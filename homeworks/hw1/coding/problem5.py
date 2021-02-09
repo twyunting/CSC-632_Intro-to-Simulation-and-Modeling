@@ -1,7 +1,8 @@
 import random
 
-# a) Generate 20 Pseudorandom numbers between 0 and 1.
 """
+# a) Generate 20 Pseudorandom numbers between 0 and 1.
+
 for i in range(20):
 	print('%05.4f' % random.random(), end=" ")
 print()
@@ -24,17 +25,17 @@ def randomNumberGenerator(n):
 		print(random.random()) # The random() method returns a random floating number between 0 and 1.
 
 randomNumberGenerator(10)
-"""
 
+"""
 # d) Use a random generator to select three “same” sets of random countries from the following list.
 countriesList = ["Canada", "USA", "Italy", "China", "India", "South Africa", "Spain", "Brazil", "Mexico"]
 
 res = []
-for i in range(3):
-	countriesItem = random.choice(countriesList)
-	res.append(countriesItem)
-print(res)
-print(res)
-print(res)
+random.seed(1)
+for i in range(3): # three thime
+	countriesItem = random.choice(countriesList) # choose one sample from the list
+	res.append(countriesItem) # add in new array
+print(res, res, res) #print three times
+
 
 
