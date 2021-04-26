@@ -1,0 +1,20 @@
+---
+title: "Untitled"
+author: "Yunting Chiu"
+date: "4/23/2021"
+output: pdf_document
+---
+
+```{r}
+aaa <- c(4150, 4270, 4390, 4510, 4630, 4750, 4600, 4450, 4300, 4150, 4000, 3850, 3700, 3550, 3400, 3250, 3100, 2950, 2800, 2650, 2800, 2650, 2500, 2350, 2200, 2050, 1900, 1750, 1600, 1450, 1300)
+aaa
+
+testing1 <- t.test(aaa, mu = 4750, alternative = "two.sided", conf.level = 0.95)
+testing1
+
+
+testing2 <- t.test(aaa, mu = 5000, alternative = "greater", conf.level = 0.97)
+testing2
+
+```
+
